@@ -1,0 +1,26 @@
+pipeline {
+agent any
+stages
+{
+stage(&#39;Check Validate&#39;){
+steps{
+echo &#39;Validating the Program&#39;
+}
+}
+stage(&#39;Compilation&#39;){
+steps{
+echo &#39;Compiling the Program&#39;
+}
+}
+stage(&#39;Installation&#39;){
+steps{
+echo &#39;Installing the Program&#39;
+}
+}
+stage(&#39;Deploy&#39;){
+steps{
+echo &#39;Deploying the Program&#39;
+}
+}
+}
+}
